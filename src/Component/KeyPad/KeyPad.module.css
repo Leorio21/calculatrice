@@ -1,0 +1,17 @@
+.keyPad {
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-areas:
+		"seven eight nine delete"
+		"four five six addition"
+		"one two three soustraction"
+		"point zero division multiplication"
+		"reset reset result result";
+	min-width: 327px;
+	width: 100%;
+	max-width: 540px;
+	border-radius: var(--border-radius--5);
+	padding: 19px 15px;
+	background: var(--keypad-background);
+}
+

@@ -1,0 +1,16 @@
+.screen {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100px;
+	min-width: 327px;
+	width: 100%;
+	max-width: 540px;
+	margin: 34px 0;
+	padding: 20px 20px 0 20px;
+	border-radius: var(--border-radius--5);
+	background: var(--screen-background);
+	color: var(--screen-color);
+	font-size: 54px;
+}
+

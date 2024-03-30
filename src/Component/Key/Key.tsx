@@ -3,17 +3,13 @@ import styles from "./Key.module.css";
 import classNames from "classnames/bind";
 
 type KeyProps = {
-  standardKey?: boolean;
-  deleteResetKey?: boolean;
-  resultKey?: boolean;
+  type: string;
 } & ComponentPropsWithoutRef<"div">;
 
 const cx = classNames.bind(styles);
 
 function Key({
-  standardKey = false,
-  deleteResetKey = false,
-  resultKey = false,
+  type,
   children,
   ...props
 }: KeyProps) {
@@ -22,9 +18,9 @@ function Key({
       {...props}
       className={cx({
         container: true,
-        standardKey: standardKey,
-        deleteResetKey: deleteResetKey,
-        resultKey: resultKey
+        standardKey: type === "standardKey",
+        deleteResetKey: type === "deleteResetKey",
+        resultKey: type === "resultKey"
       })}
     >
       {children}

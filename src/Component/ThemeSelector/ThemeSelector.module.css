@@ -1,0 +1,56 @@
+.themes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	color: var(--screen-color);
+	font-size: 15px;
+}
+
+.themeDivTitle {
+	width: 60%;
+}
+
+.themeDivSelector {
+	width: 40%;
+}
+
+.themesNumbers {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 3px;
+}
+.themesNumber {
+	width: 9px;
+	text-align: center;
+}
+
+.themesSelector {
+	display: flex;
+	height: 16px;
+	width: 100%;
+	border-radius: var(--border-radius--25);
+	padding: 2px;
+	background: var(--keypad-background);
+	cursor: pointer;
+}
+
+.selectdark {
+	justify-content: flex-start;
+}
+
+.selectlight {
+	justify-content: center;
+}
+
+.selectpurple {
+	justify-content: flex-end;
+}
+
+.themeButton {
+	height: 12px;
+	width: 12px;
+	border-radius: var(--border-radius--25);
+	background: var(--key-background--toggle-result);
+}
+
