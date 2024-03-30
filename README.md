@@ -13,5 +13,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Deploy on Vercel
 
-You can also see the [result on vercel](https://le-jeu-du-pendu.vercel.app/)
+You can also see the [result on vercel](https://calculatrice-psi.vercel.app/)
 
