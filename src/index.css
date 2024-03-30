@@ -1,11 +1,15 @@
-:root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
+:root {
+
+	--border-radius--5: 5px;
+	--border-radius--25: 25px;
+
+	font-family: "League Spartan", Inter, system-ui, Avenir, Helvetica, Arial,
+		sans-serif;
+	line-height: 1.5;
+	font-weight: 700;
+	font-size: 32px;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -15,64 +19,71 @@
 
 * {
 	box-sizing: border-box;
-	marging: 0;
+	margin: 0;
 	padding: 0;
 }
 
-.theme1 {
-	--main-background: hsl(222, 26%, 31%);
-	--keypad-background: hsl(223, 31%, 20%);
-	--screen-bacground: hsl(224, 36%, 15%);
-
-	--key-background--del-reset: hsl(225, 21%, 49%);
-	--key-shadow--del-reset: hsl(224, 28%, 35%);
-
-	--key-background--toggle-result: hsl(6, 63%, 50%);
-	--key-shadow--toggle-result: hsl(6, 70%, 34%);
-
-	--key-background: hsl(30, 25%, 89%);
-	--key-shadow: hsl(28, 16%, 65%);
-
-	--text-color--light: hsl(0, 0%, 100%);
-	--text-color--dark: hsl(221, 14%, 31%);
-	--text-color-result: hsl(0, 0%, 100%);
+body {
+	background-color: var(--main-background);
+	padding: 24px;
 }
 
-.theme2 {
+.light {
 	--main-background: hsl(0, 0%, 90%);
 	--keypad-background: hsl(0, 5%, 81%);
-	--screen-bacground: hsl(0, 0%, 93%);
+
+	--screen-background: hsl(0, 0%, 93%);
+	--screen-color: hsl(60, 10%, 19%);
 
 	--key-background--del-reset: hsl(185, 42%, 37%);
 	--key-shadow--del-reset: hsl(185, 58%, 25%);
+	--text-color--del-reset: hsl(0, 0%, 100%);
 
 	--key-background--toggle-result: hsl(25, 98%, 40%);
 	--key-shadow--toggle-result: hsl(25, 99%, 27%);
+	--text-color--toggle-result: hsl(0, 0%, 100%);
 
-	--key-background: hsl(45, 7%, 89%);
-	--key-shadow: hsl(35, 11%, 61%);
-
-	--text-color--light: hsl(0, 0%, 100%);
-	--text-color--dark: hsl(60, 10%, 19%);
-	--text-color-result: hsl(0, 0%, 100%);
+	--key-background--standard: hsl(45, 7%, 89%);
+	--key-shadow--standard: hsl(35, 11%, 61%);
+	--text-color--standard: hsl(60, 10%, 19%);
 }
 
-.theme3 {
+.dark {
+	--main-background: hsl(222, 26%, 31%);
+	--keypad-background: hsl(223, 31%, 20%);
+
+	--screen-background: hsl(224, 36%, 15%);
+	--screen-color: hsl(0, 0%, 100%);
+
+	--key-background--del-reset: hsl(225, 21%, 49%);
+	--key-shadow--del-reset: hsl(224, 28%, 35%);
+	--text-color--del-reset: hsl(0, 0%, 100%);
+
+	--key-background--toggle-result: hsl(6, 63%, 50%);
+	--key-shadow--toggle-result: hsl(6, 70%, 34%);
+	--text-color--toggle-result: hsl(0, 0%, 100%);
+
+	--key-background--standard: hsl(45, 7%, 89%);
+	--key-shadow--standard: hsl(28, 16%, 65%);
+	--text-color--standard: hsl(221, 14%, 31%);
+}
+
+.purple {
 	--main-background: hsl(268, 75%, 9%);
 	--keypad-background: hsl(268, 71%, 12%);
-	--screen-bacground: hsl(268, 71%, 12%);
+
+	--screen-background: hsl(268, 71%, 12%);
+	--screen-color: hsl(52, 100%, 62%);
 
 	--key-background--del-reset: hsl(281, 89%, 26%);
 	--key-shadow--del-reset: hsl(285, 91%, 52%);
+	--text-color--del-reset: hsl(0, 0%, 100%);
 
 	--key-background--toggle-result: hsl(176, 100%, 44%);
 	--key-shadow--toggle-result: hsl(177, 92%, 70%);
+	--text-color--toggle-result: hsl(198, 20%, 13%);
 
-	--key-background: hsl(268, 47%, 21%);
-	--key-shadow: hsl(290, 70%, 36%);
-
-	--text-color--light: hsl(52, 100%, 62%);
-	--text-color--dark: hsl(198, 20%, 13%);
-	--text-color-result: hsl(0, 0%, 100%);
+	--key-background--standard: hsl(268, 47%, 21%);
+	--key-shadow--standard: hsl(290, 70%, 36%);
+	--text-color--standard: hsl(52, 100%, 62%);
 }
-

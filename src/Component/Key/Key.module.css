@@ -1,0 +1,33 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+	margin: 7px;
+	border-radius: var(--border-radius--5);
+	padding-top: 5px;
+	cursor: pointer;
+}
+
+.container:hover {
+	filter: brightness(125%);
+}
+
+.standardKey {
+	box-shadow: 0px 4px 0px var(--key-shadow--standard);
+	background-color: var(--key-background--standard);
+	color: var(--text-color--standard);
+}
+
+.deleteResetKey {
+	box-shadow: 0px 4px 0px var(--key-shadow--del-reset);
+	background-color: var(--key-background--del-reset);
+	color: var(--text-color--del-reset);
+}
+
+.resultKey {
+	box-shadow: 0px 4px 0px var(--key-shadow--toggle-result);
+	background-color: var(--key-background--toggle-result);
+	color: var(--text-color--toggle-result);
+}
+
